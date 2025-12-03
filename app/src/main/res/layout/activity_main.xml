@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fffacd"
+    tools:context=".MainActivity">
+
+    <TextView
+        style="@style/Roulet"
+        android:id="@+id/txtTurn"
+        android:layout_width="302dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnspin"
+        android:layout_width="258dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="272dp"
+        android:text="スピン！"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgRoulette" />
+
+    <TextView
+        android:id="@+id/txtWho"
+        style="@style/Roulet"
+        android:layout_width="407dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnspin" />
+
+    <TextView
+        android:id="@+id/txtWhat"
+        style="@style/Roulet"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtWho"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imgRoulette"
+        android:layout_width="285dp"
+        android:layout_height="265dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/roulette_transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtTurn" />
+
+    <ImageView
+        android:id="@+id/imgPointer"
+        android:layout_width="332dp"
+        android:layout_height="323dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTurn"
+        app:layout_constraintVertical_bias="0.039"
+        app:srcCompat="@drawable/pin_transparent" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="150dp"
+        android:layout_height="52dp"
+        android:backgroundTint="#d1bada"
+        android:text="メンバー変更"
+        android:textColor="#fffacd"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.992"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.054" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

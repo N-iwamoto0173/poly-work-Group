@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Nominication" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Nominication" parent="Base.Theme.Nominication" />
+    <style name="headstyle">
+        <item name="android:textSize">24sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#ff7f50</item>
+    </style>
+    <style name="Roulet">
+        <item name="android:textColor">#ff7f50</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">35sp</item>
+        <item name="android:fontFamily">@font/otsutome</item>
+    </style>
+
+
+</resources>
